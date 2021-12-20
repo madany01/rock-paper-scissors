@@ -5,12 +5,32 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
 	<script defer src="script.js"></script>
 	<title>RPS</title>
 </head>
 
 <body>
+	<h1>Rock Paper Scissor</h1>
 
+	<div class="container">
+		<button class="restart">Restart</button>
+
+		<div class="info-container">
+			<div class="round">⌚ Round <span class="round-number">1</span> of <span class="num-rounds">5</span></div>
+			<div class="score user-score">🏅 Your score <span class="score-value">0</span></div>
+			<div class="score computer-score">🏅 Computer score <span class="score-value">0</span></div>
+		</div>
+	</div>
+	<div class="btns-container">
+		<button class="choice-btn" data-choice="Rock">Rock</button>
+		<button class="choice-btn" data-choice="Paper">Paper</button>
+		<button class="choice-btn" data-choice="Scissor">Scissor</button>
+	</div>
+
+	<div class="log"></div>
+
+	<div class="result win hidden"></div>
 </body>
 
 </html>
